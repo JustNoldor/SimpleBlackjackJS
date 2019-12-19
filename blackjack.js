@@ -1,6 +1,6 @@
 //
 //Blackjack
-//
+//by mertsariboga
 //
 
 //Card Variables
@@ -25,6 +25,8 @@ let gameStarted=false,
     playerScore=0,
     deck=[];
 
+let titleArea =  document.getElementById('title');
+titleArea.
 
 hitButton.style.display='none';
 stayButton.style.display='none';
@@ -136,7 +138,33 @@ function updateScores() {
 }
 
 function checkForEndOfGame() {
-    //TODO
+    updateScores();
+    if (gameOver) {
+        while (dealerScore<playerScore
+            && playerScore<=21
+            && dealerScore<=21){
+                dealerCards.push(getNextCard());
+                updateScores();
+            }
+            
+        
+    }
+    if (playerScore>21) {
+        playerWon=false;
+        gameOver=true;
+    }
+    else if (dealerScore>21){
+        playerWon=true;
+        gameOver=true;
+    }
+    else if (gameOver){
+        if (playerScore>dealerScore) {
+            playerWon=true;
+        }
+        else{
+            playerWon=false;
+        }
+    }
 }
 
 function showStatus() {
@@ -168,6 +196,7 @@ for (let i = 0; i < playerCards.length; i++) {
 if (gameOver) {
     if (playerWon) {
         textArea.innerText += "YOU WIN!";
+        textArea.innerText.style
     }
     else{
         textArea.innerText += "DEALER WINS";

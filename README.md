@@ -1,5 +1,1 @@
-# JavascriptDeveloping
-# JavascriptDeveloping
-# JavascriptDeveloping
-# JavascriptDeveloping
-# JavascriptDeveloping
+# Simple Blackjack
