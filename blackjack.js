@@ -26,7 +26,6 @@ let gameStarted=false,
     deck=[];
 
 let titleArea =  document.getElementById('title');
-titleArea.
 
 hitButton.style.display='none';
 stayButton.style.display='none';
